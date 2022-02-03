@@ -111,3 +111,18 @@ aside {
     display: flex;
     flex-flow: row nowrap;
 }
+
+/*Transiciones*/
+.transicion{
+    transition: width 2s;
+}
+
+.transicion:hover{
+    width: 500px;
+    height: 300px;
+    background-color: #a4508b;
+background-image: url(imagen.png);
+width: 200px;
+height: 50%;
+
+}
