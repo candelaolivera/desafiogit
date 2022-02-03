@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+/*Gradiente*/
+.border {
+    border: solid 1px #000;
+    background-color: #eec0c6;
+background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
+
+
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    color: burlywood;
+
+}
+
+header {
+    display: flex;
+    grid-area: header;
+
+}
+
+
+
+span {
+    width: 100%;
+    height: 100 vh;
+    color: cornsilk;
+
+}
+
+span:hover {
+    background-color: pink;
+    color: azure;
+}
+
+article {
+    background-color: #fff;
+    border-radius: 4px;
+    margin: 5px;
+    text-align: center;
+    font-size: 0.75rem;
+    padding: 10px;
+}
+
+
+
+
+
+/*Grids por areas */
+#gridAreas {
+
+    display: grid;
+    grid-template-areas:
+        "menu header header"
+        "menu productos publicidad"
+        "menu servicios publicidad"
+        "menu pie pie"
+    ;
+    grid-template-columns: 20% auto 15%;
+    grid-template-rows: 100px 1fr 1fr 75px;
+    grid-column-gap: 10px;
+    grid-row-gap: 5px;
+}
+
+
+/*Nombre de cada area*/
+header {
+    grid-area: header;
+    padding: 10px;
+}
+
+footer {
+    grid-area: pie;
+    padding: 10px;
+}
+
+.section#productos {
+    grid-area: productos;
+    padding: 10px;
+
+}
+
+section#servicios {
+    grid-area: servicios;
+    padding: 10px;
+}
+
+nav {
+    grid-area: menu;
+    padding: 10px;
+}
+
+aside {
+    grid-area: publicidad;
+    padding: 10px;
+}
+
+.flexMenu {
+    display: flex;
+    flex-direction: column;
+}
+
+.productosFlex {
+    display: flex;
+    flex-flow: row nowrap;
+}
